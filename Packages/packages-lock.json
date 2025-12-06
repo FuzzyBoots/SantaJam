@@ -1,11 +1,10 @@
 {
   "dependencies": {
     "com.antigravity.ide": {
-      "version": "https://github.com/prithvi-bharadwaj/Antigravity-IDE.git",
+      "version": "file:C:/Users/seand/Unity/Antigravity-IDE",
       "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "052001cf62c44b1af3d8bd6339939f5f2c34966d"
+      "source": "local",
+      "dependencies": {}
     },
     "com.unity.ai.navigation": {
       "version": "1.1.6",

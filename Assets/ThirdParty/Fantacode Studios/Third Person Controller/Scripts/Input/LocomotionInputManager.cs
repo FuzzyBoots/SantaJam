@@ -18,8 +18,8 @@ namespace FS_ThirdPerson
         [SerializeField] KeyCode selectKey = KeyCode.E;
         [SerializeField] KeyCode backKey = KeyCode.Escape;
         [SerializeField] KeyCode crouchKey = KeyCode.C;
-        [SerializeField] KeyCode cycleToPreviousKey = KeyCode.Alpha3;
-        [SerializeField] KeyCode cycleToNextKey = KeyCode.Alpha4;
+        [SerializeField] KeyCode cycleToPreviousKey = KeyCode.None;
+        [SerializeField] KeyCode cycleToNextKey = KeyCode.None;
 
 
         [Header("Buttons")]
