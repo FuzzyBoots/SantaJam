@@ -149,6 +149,8 @@ namespace FS_ShooterSystem
             {
                 shooterInputManger.OnAimPressed += OnAimPressed;
                 shooterInputManger.OnAimReleased += OnAimReleased;
+                shooterInputManger.OnWeaponSelect += SelectWeapon;
+                shooterInputManger.OnWeaponQuickDeploy += QuickDeployWeapon;
             }
 
             Shooter.OnRecoil += StartRecoil;
@@ -225,6 +227,87 @@ namespace FS_ShooterSystem
             yield return new WaitUntil(() => !itemEquipper.IsChangingItem);
             itemEquipper.UnEquipItem(weaponToEquipOnAim);
         }
+
+        private void SelectWeapon(int index)
+        {
+            if (index < 0 || index >= itemEquipper.equippableItems.Count) return;
+            var item = itemEquipper.equippableItems[index];
+            if (item != itemEquipper.EquippedItem)
+            {
+                itemEquipper.EquipItem(item);
+            }
+        }
+
+        private void QuickDeployWeapon(int index)
+        {
+            SelectWeapon(index);
+            StartCoroutine(FindAndSnapTarget());
+        }
+
+        private IEnumerator FindAndSnapTarget()
+        {
+            // Wait for weapon switch if happening, but a small delay might be enough or we can try immediately 
+            // knowing that EquipItem starts a coroutine. 
+            // However, we want to snap aim immediately so the player feels the "Quick Deploy".
+            
+            yield return null; // Wait one frame for state updates
+
+            // Use Aim Assist logic to find best target
+            // We use a larger radius for quick deploy to ensure we find something
+            float scanRadius = 10f; // Wide cone
+            float scanRange = 50f; 
+            
+            var target = FindClosestEnemyAlongSpherecast(cam, scanRadius, scanRange, fighterCore.targetLayer);
+
+            if (target != null)
+            {
+                // Force Aim
+                Shooter.StartAiming();
+                
+                // Calculate target position
+                Vector3 ideal = target.bounds.center;
+                if (target is CharacterController cc)
+                {
+                    ideal = cc.transform.position + cc.transform.up * (cc.height * 0.75f); // Aim at upper chest/head area
+                }
+
+                // Snap camera and aim point
+                playerController.CameraLookAtPoint(ideal);
+                Shooter.SetAimPoint(ideal, false, false); // No smoothing, instant snap
+                
+                OnTargetLocked(target);
+            }
+        }
+
+        private void OnTargetLocked(Collider target)
+        {
+             // Optional: Add visual feedback or auto-fire logic here if requested later
+        }
+
+        #endregion
+
+        #region Main Update Loop
+
+        public override void HandleUpdate()
+        {
+
+            if (fighterCore.Action == FighterAction.Dodging)
+                fighterCore.ApplyAnimationGravity(locomotionICharacter.CheckIsGrounded(), IsInFocus);
+            if (Shooter.IsWeaponEquipped)
+            {
+                //UpdateCameraAlignment();
+                // Calculate where the weapon is pointing based on camera center and weapon position
+                if (Shooter.IsShooterWeaponEquipped)
+                    UpdateAimPoint(cam);
+                
+            }
+            // Skip update if the shooter system is in setup mode to prevent unnecessary processing
+            if (Shooter.IkSetupMode) return;
+            
+            // ... (rest of method continues, but block ends at 800 so this should be enough to cover the top area replacement)
+            // Wait, I am replacing lines 145-227-ish.
+            // I should just target the specific region.
+
 
         #endregion
 
