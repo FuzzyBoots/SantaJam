@@ -1,0 +1,346 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a22ac9caa4e533841a4b3676a5b8a7ef, type: 3}
+  m_Name: Right Overhand
+  m_EditorClassIdentifier: 
+  clip: {fileID: 1270684749343247563, guid: 4964645b52af9594fac01a7fc7db6d73, type: 3}
+  clipInfo:
+    clip: {fileID: 1270684749343247563, guid: 4964645b52af9594fac01a7fc7db6d73, type: 3}
+    customAnimationSpeed: 0
+    useAsGlobalTimeScale: 0
+    speedModifier:
+      currentModifierType: 0
+      constant: 1
+      curve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      defaultCurveRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1
+        height: 3
+      serialized: 1
+    useGravity: 1
+    gravityModifier:
+      currentModifierType: 0
+      constant: 1
+      curve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      defaultCurveRect:
+        serializedVersion: 2
+        x: 0
+        y: -2
+        width: 1
+        height: 4
+      serialized: 1
+    showDetails: 0
+    TranistionInAndOut: {x: 0.2, y: 0.2}
+    events: []
+    onEndAnimation: []
+    serialized: 1
+  isFinisher: 0
+  canHitMultipleTargets: 0
+  hitDirection: 4
+  reactionTag: Weak
+  overrideReaction: 0
+  reaction:
+    animationClipInfo:
+      clip: {fileID: 0}
+      customAnimationSpeed: 0
+      useAsGlobalTimeScale: 0
+      speedModifier:
+        currentModifierType: 0
+        constant: 1
+        curve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        defaultCurveRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 1
+          height: 3
+        serialized: 1
+      useGravity: 1
+      gravityModifier:
+        currentModifierType: 0
+        constant: 1
+        curve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        defaultCurveRect:
+          serializedVersion: 2
+          x: 0
+          y: -2
+          width: 1
+          height: 4
+        serialized: 1
+      showDetails: 0
+      TranistionInAndOut: {x: 0.2, y: 0.2}
+      events: []
+      onEndAnimation: []
+      serialized: 1
+    willBeKnockedDown: 0
+    knockDownDirection: 0
+    lyingDownTimeRange: {x: 1, y: 3}
+    overrideLyingDownAnimation: 0
+    lyingDownAnimation: {fileID: 0}
+    getUpAnimation: {fileID: 0}
+    rotateToAttacker: 1
+    rotationOffset: 0
+    animationMask: 0
+    isAdditiveAnimation: 0
+    triggerRagdoll: 0
+    ragdollTriggerTime: 0
+    animationClip: {fileID: 0}
+  isSyncedReaction: 0
+  syncStartTime: 0
+  overrideBlockedReaction: 1
+  blockedReaction:
+    animationClipInfo:
+      clip: {fileID: 1949148441884433929, guid: 0a7ae22bfd3a500449a101a6d2e66adc, type: 3}
+      customAnimationSpeed: 0
+      useAsGlobalTimeScale: 0
+      speedModifier:
+        currentModifierType: 0
+        constant: 1
+        curve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        defaultCurveRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 1
+          height: 3
+        serialized: 1
+      useGravity: 1
+      gravityModifier:
+        currentModifierType: 0
+        constant: 1
+        curve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        defaultCurveRect:
+          serializedVersion: 2
+          x: 0
+          y: -2
+          width: 1
+          height: 4
+        serialized: 1
+      showDetails: 1
+      TranistionInAndOut: {x: 0.2, y: 0.2}
+      events: []
+      onEndAnimation: []
+      serialized: 1
+    willBeKnockedDown: 0
+    knockDownDirection: 0
+    lyingDownTimeRange: {x: 1, y: 3}
+    overrideLyingDownAnimation: 0
+    lyingDownAnimation: {fileID: 0}
+    getUpAnimation: {fileID: 0}
+    rotateToAttacker: 1
+    rotationOffset: 0
+    animationMask: 0
+    isAdditiveAnimation: 0
+    triggerRagdoll: 0
+    ragdollTriggerTime: 0
+    animationClip: {fileID: 1949148441884433929, guid: 0a7ae22bfd3a500449a101a6d2e66adc, type: 3}
+  isSyncedBlockedReaction: 1
+  blockSyncStartTime: 0
+  canBeCountered: 0
+  counterAttacks: []
+  hitboxToUse: 1
+  damage: 5
+  impactStartTime: 0.36
+  impactEndTime: 0.49
+  waitForNextAttack: 0
+  waitForAttackTime: 0.5
+  rotateToTarget: 1
+  rotateToTargetSettings:
+    rotationOffset: 0
+    rotationType: 0
+    rotateStartTime: 0
+    rotateEndTime: 1
+  moveToTarget: 0
+  distanceFromTarget: 0.7
+  localPositionFromTarget: {x: 0, y: 0, z: 0}
+  moveStartTime: 0.27
+  moveEndTime: 0.32
+  ignoreCollisions: 0
+  moveType: 0
+  snapType: 0
+  snapTarget: 0
+  weightMask: {x: 1, y: 1, z: 1}
+  rootCurves:
+    CurveX:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    CurveY:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    CurveZ:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  isUnblockableAttack: 0
+  strikeSound: {fileID: 0}
+  hitSound: {fileID: 0}
+  hitSounds:
+  - {fileID: 8300000, guid: 85f392f6c46b895459b500124080d0d8, type: 3}
+  - {fileID: 8300000, guid: 1bf0d3dd278041e44b0d4b6f1cb02254, type: 3}
+  - {fileID: 8300000, guid: cff311b7ad1f7224882f5e34fce130a0, type: 3}
+  blockedHitSound: {fileID: 8300000, guid: cd4c0ee95306ef047bd8c7f11b46817c, type: 3}
+  reactionSound: {fileID: 0}
+  reactionSounds: []
+  hitEffect: {fileID: 1093524190895648044, guid: 8891f7718792b1f4bbdba4f1c91bec76, type: 3}
+  hittingTime: 0
+  blockedHitEffect: {fileID: 0}
+  blockedHittingTime: 0.508
+  cameraShakeAmount: 0.3
+  cameraShakeDuration: 0.2

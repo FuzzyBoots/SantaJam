@@ -1,0 +1,517 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a22ac9caa4e533841a4b3676a5b8a7ef, type: 3}
+  m_Name: Finisher Counter
+  m_EditorClassIdentifier: 
+  clip: {fileID: 0}
+  clipInfo:
+    clip: {fileID: 1901769356082839372, guid: 78e7dc8efe8b04c4fb9bc528aef2400b, type: 3}
+    customAnimationSpeed: 0
+    useAsGlobalTimeScale: 0
+    speedModifier:
+      currentModifierType: 0
+      constant: 1
+      curve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      defaultCurveRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1
+        height: 3
+      serialized: 1
+    useGravity: 1
+    gravityModifier:
+      currentModifierType: 0
+      constant: 1
+      curve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      defaultCurveRect:
+        serializedVersion: 2
+        x: 0
+        y: -2
+        width: 1
+        height: 4
+      serialized: 1
+    showDetails: 1
+    TranistionInAndOut: {x: 0.2, y: 0.2}
+    events:
+    - normalizedTime: 0
+      targetObject: {fileID: 11500000, guid: c9df3360634fbff49a7c120f9142d052, type: 3}
+      methodName: PlaySfx
+      parameters:
+      - type: 11
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        boolValue: 0
+        vector2Value: {x: 0, y: 0}
+        vector3Value: {x: 0, y: 0, z: 0}
+        gameObjectValue: {fileID: 0}
+        humanBodyBoneValue: 0
+        componentValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        animationCurveValue:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 0
+          m_PostInfinity: 0
+          m_RotationOrder: 0
+        audioClipValue: {fileID: 8300000, guid: a7d53582afb3b8846ad929e464fff327, type: 3}
+        textureValue: {fileID: 0}
+        materialValue: {fileID: 0}
+        spriteValue: {fileID: 0}
+        layerMaskValue:
+          serializedVersion: 2
+          m_Bits: 0
+        _object: {fileID: 0}
+        cameraSettings:
+          distance: 2.5
+          framingOffset: {x: 0, y: 1.5, z: 0}
+          followSmoothTime: 0
+          localRotationOffset: {x: 0, y: 0}
+          sensitivity: 0.6
+          minVerticalAngle: -45
+          maxVerticalAngle: 70
+          invertX: 0
+          invertY: 1
+          enableCameraCollisions: 1
+          minDistanceFromTarget: 0
+          overridedFollowTarget: {fileID: 0}
+          serialized: 1
+        parameterName: audioClip
+      methodInfos:
+      - ChangeCamera
+      - ResetCamera
+      - PlayInSlowMotion
+      - ResetSlowMotion
+      - PlayEffect
+      - PlaySfx
+      foldOut: 1
+      isGameObject: 0
+      targetName: AnimationEventExamples
+      clip: {fileID: 1901769356082839372, guid: 78e7dc8efe8b04c4fb9bc528aef2400b, type: 3}
+      unityEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - normalizedTime: 0.4
+      targetObject: {fileID: 11500000, guid: c9df3360634fbff49a7c120f9142d052, type: 3}
+      methodName: PlaySfx
+      parameters:
+      - type: 11
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        boolValue: 0
+        vector2Value: {x: 0, y: 0}
+        vector3Value: {x: 0, y: 0, z: 0}
+        gameObjectValue: {fileID: 0}
+        humanBodyBoneValue: 0
+        componentValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        animationCurveValue:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 0
+          m_PostInfinity: 0
+          m_RotationOrder: 0
+        audioClipValue: {fileID: 8300000, guid: 27691fc69e6f8d74193376c406fd150e, type: 3}
+        textureValue: {fileID: 0}
+        materialValue: {fileID: 0}
+        spriteValue: {fileID: 0}
+        layerMaskValue:
+          serializedVersion: 2
+          m_Bits: 0
+        _object: {fileID: 0}
+        cameraSettings:
+          distance: 2.5
+          framingOffset: {x: 0, y: 1.5, z: 0}
+          followSmoothTime: 0
+          localRotationOffset: {x: 0, y: 0}
+          sensitivity: 0.6
+          minVerticalAngle: -45
+          maxVerticalAngle: 70
+          invertX: 0
+          invertY: 1
+          enableCameraCollisions: 1
+          minDistanceFromTarget: 0
+          overridedFollowTarget: {fileID: 0}
+          serialized: 1
+        parameterName: audioClip
+      methodInfos:
+      - ChangeCamera
+      - ResetCamera
+      - PlayInSlowMotion
+      - ResetSlowMotion
+      - PlayEffect
+      - PlaySfx
+      foldOut: 1
+      isGameObject: 0
+      targetName: AnimationEventExamples
+      clip: {fileID: 1901769356082839372, guid: 78e7dc8efe8b04c4fb9bc528aef2400b, type: 3}
+      unityEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - normalizedTime: 0.428
+      targetObject: {fileID: 11500000, guid: c9df3360634fbff49a7c120f9142d052, type: 3}
+      methodName: PlaySfx
+      parameters:
+      - type: 11
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        boolValue: 0
+        vector2Value: {x: 0, y: 0}
+        vector3Value: {x: 0, y: 0, z: 0}
+        gameObjectValue: {fileID: 0}
+        humanBodyBoneValue: 0
+        componentValue: {fileID: 0}
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        animationCurveValue:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 0
+          m_PostInfinity: 0
+          m_RotationOrder: 0
+        audioClipValue: {fileID: 8300000, guid: a688527203c8bfb4cbac851065770fdc, type: 3}
+        textureValue: {fileID: 0}
+        materialValue: {fileID: 0}
+        spriteValue: {fileID: 0}
+        layerMaskValue:
+          serializedVersion: 2
+          m_Bits: 0
+        _object: {fileID: 0}
+        cameraSettings:
+          distance: 2.5
+          framingOffset: {x: 0, y: 1.5, z: 0}
+          followSmoothTime: 0
+          localRotationOffset: {x: 0, y: 0}
+          sensitivity: 0.6
+          minVerticalAngle: -45
+          maxVerticalAngle: 70
+          invertX: 0
+          invertY: 1
+          enableCameraCollisions: 1
+          minDistanceFromTarget: 0
+          overridedFollowTarget: {fileID: 0}
+          serialized: 1
+        parameterName: audioClip
+      methodInfos:
+      - ChangeCamera
+      - ResetCamera
+      - PlayInSlowMotion
+      - ResetSlowMotion
+      - PlayEffect
+      - PlaySfx
+      foldOut: 1
+      isGameObject: 0
+      targetName: AnimationEventExamples
+      clip: {fileID: 1901769356082839372, guid: 78e7dc8efe8b04c4fb9bc528aef2400b, type: 3}
+      unityEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    onEndAnimation: []
+    serialized: 1
+  isFinisher: 1
+  canHitMultipleTargets: 0
+  hitDirection: 1
+  reactionTag: 
+  overrideReaction: 1
+  reaction:
+    animationClipInfo:
+      clip: {fileID: 3273394256886209340, guid: 3071bf0dde9efd14693df9d0f94a0678, type: 3}
+      customAnimationSpeed: 0
+      useAsGlobalTimeScale: 0
+      speedModifier:
+        currentModifierType: 0
+        constant: 1
+        curve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        defaultCurveRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 1
+          height: 3
+        serialized: 1
+      useGravity: 1
+      gravityModifier:
+        currentModifierType: 0
+        constant: 1
+        curve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        defaultCurveRect:
+          serializedVersion: 2
+          x: 0
+          y: -2
+          width: 1
+          height: 4
+        serialized: 1
+      showDetails: 0
+      TranistionInAndOut: {x: 0.2, y: 0.2}
+      events: []
+      onEndAnimation: []
+      serialized: 1
+    willBeKnockedDown: 1
+    knockDownDirection: 0
+    lyingDownTimeRange: {x: 1, y: 3}
+    overrideLyingDownAnimation: 0
+    lyingDownAnimation: {fileID: 0}
+    getUpAnimation: {fileID: 0}
+    rotateToAttacker: 1
+    rotationOffset: 0
+    animationMask: 0
+    isAdditiveAnimation: 0
+    triggerRagdoll: 0
+    ragdollTriggerTime: 0
+    animationClip: {fileID: 0}
+  isSyncedReaction: 1
+  syncStartTime: 0
+  overrideBlockedReaction: 0
+  blockedReaction:
+    animationClipInfo:
+      clip: {fileID: 0}
+      customAnimationSpeed: 0
+      useAsGlobalTimeScale: 0
+      speedModifier:
+        currentModifierType: 0
+        constant: 1
+        curve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        defaultCurveRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 1
+          height: 3
+        serialized: 1
+      useGravity: 1
+      gravityModifier:
+        currentModifierType: 0
+        constant: 1
+        curve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        defaultCurveRect:
+          serializedVersion: 2
+          x: 0
+          y: -2
+          width: 1
+          height: 4
+        serialized: 1
+      showDetails: 0
+      TranistionInAndOut: {x: 0.2, y: 0.2}
+      events: []
+      onEndAnimation: []
+      serialized: 1
+    willBeKnockedDown: 0
+    knockDownDirection: 0
+    lyingDownTimeRange: {x: 1, y: 3}
+    overrideLyingDownAnimation: 0
+    lyingDownAnimation: {fileID: 0}
+    getUpAnimation: {fileID: 0}
+    rotateToAttacker: 1
+    rotationOffset: 0
+    animationMask: 0
+    isAdditiveAnimation: 0
+    triggerRagdoll: 0
+    ragdollTriggerTime: 0
+    animationClip: {fileID: 0}
+  isSyncedBlockedReaction: 0
+  blockSyncStartTime: 0
+  canBeCountered: 0
+  counterAttacks: []
+  hitboxToUse: 4
+  damage: 5
+  impactStartTime: 0.31
+  impactEndTime: 0.54
+  waitForNextAttack: 0
+  waitForAttackTime: 0
+  rotateToTarget: 1
+  rotateToTargetSettings:
+    rotationOffset: 0
+    rotationType: 0
+    rotateStartTime: 0
+    rotateEndTime: 1
+  moveToTarget: 1
+  distanceFromTarget: 1.2
+  localPositionFromTarget: {x: 0, y: 0, z: 0}
+  moveStartTime: 0
+  moveEndTime: 0.13
+  ignoreCollisions: 1
+  moveType: 0
+  snapType: 0
+  snapTarget: 0
+  weightMask: {x: 1, y: 1, z: 1}
+  rootCurves:
+    CurveX:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    CurveY:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    CurveZ:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  isUnblockableAttack: 0
+  strikeSound: {fileID: 0}
+  hitSound: {fileID: 0}
+  hitSounds: []
+  blockedHitSound: {fileID: 0}
+  reactionSound: {fileID: 0}
+  reactionSounds: []
+  hitEffect: {fileID: 1093524190895648044, guid: 8891f7718792b1f4bbdba4f1c91bec76, type: 3}
+  hittingTime: 0.395
+  blockedHitEffect: {fileID: 0}
+  blockedHittingTime: 0
+  cameraShakeAmount: 0.3
+  cameraShakeDuration: 0.2

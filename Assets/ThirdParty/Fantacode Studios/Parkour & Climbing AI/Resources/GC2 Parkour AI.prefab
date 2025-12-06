@@ -1,0 +1,209 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5164562003106331288
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 85481782471365001}
+  - component: {fileID: 8983915915581015160}
+  - component: {fileID: 7442356666426646855}
+  - component: {fileID: 505007607929205852}
+  - component: {fileID: 6477886320816527715}
+  m_Layer: 0
+  m_Name: GC2 Parkour AI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &85481782471365001
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5164562003106331288}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8983915915581015160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5164562003106331288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04031db5b7dc82a4f8163bdb2ff76c27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  followType: 6
+  player: {fileID: 0}
+  target: {fileID: 0}
+  followWayPoints: {fileID: 0}
+  followThroughClimbPoints: 1
+  enableSpaceChecking: 1
+  dynamicPredictiveJump: 1
+  isFalling: 0
+--- !u!114 &7442356666426646855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5164562003106331288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c26fdeb979b402b4bb4ed6719c8221d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enablePredictiveJump: 1
+  enableBalanceWalk: 0
+  forwardJumpSpeed: 4.5
+  maxJumpHeight: 1.5
+  parkourActions:
+  - {fileID: 11400000, guid: 140265c23ffe8f04b94bf6286f667146, type: 2}
+  - {fileID: 11400000, guid: 77508b0b15797294da333074d59c47ab, type: 2}
+  - {fileID: 11400000, guid: 82f641707e71bfe4a95ec9815885b347, type: 2}
+  - {fileID: 11400000, guid: 0c94d8efe347ff84b920190e4c36dcb2, type: 2}
+  - {fileID: 11400000, guid: 6c66e78c991e8a9409391dafeb2fa4fc, type: 2}
+  - {fileID: 11400000, guid: 7bad752d0f2272a46861ec7aa2b59dd4, type: 2}
+  <RotationSpeed>k__BackingField: 500
+  ObstacleLayer:
+    serializedVersion: 2
+    m_Bits: 1
+  climbController: {fileID: 0}
+--- !u!114 &505007607929205852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5164562003106331288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 561ce58aa3d3c2a4f9f2fdda24528462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableClimbing: 1
+  handOffsets: {x: 0, y: -0.08, z: 0.05}
+  footPlacementOffset: 0.15
+  footIkRayLength: 0.5
+  hipRayLength: 0.3
+  previousPoint: {fileID: 0}
+  LedgeLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  rightHand:
+    current: 0
+    target: 0
+    weight: 0
+    currentPoint: {fileID: 0}
+    previousPoint: {fileID: 0}
+    currentIkVecPoint: {x: 0, y: 0, z: 0}
+    previousIkVecPoint: {x: 0, y: 0, z: 0}
+    currentVecPoint: {x: 0, y: 0, z: 0}
+    previousVecPoint: {x: 0, y: 0, z: 0}
+    currentVecPointOn: 0
+    previousVecPointOn: 0
+    boneTransform: {x: 0, y: 0, z: 0}
+    bodyPartOffset: {x: 0, y: 0, z: 0}
+    startBodyPartOffset: {x: 0, y: 0, z: 0}
+    endBodyPartOffset: {x: 0, y: 0, z: 0}
+    IKPoint: {x: 0, y: 0, z: 0}
+    lerpValue: 0
+  leftHand:
+    current: 0
+    target: 0
+    weight: 0
+    currentPoint: {fileID: 0}
+    previousPoint: {fileID: 0}
+    currentIkVecPoint: {x: 0, y: 0, z: 0}
+    previousIkVecPoint: {x: 0, y: 0, z: 0}
+    currentVecPoint: {x: 0, y: 0, z: 0}
+    previousVecPoint: {x: 0, y: 0, z: 0}
+    currentVecPointOn: 0
+    previousVecPointOn: 0
+    boneTransform: {x: 0, y: 0, z: 0}
+    bodyPartOffset: {x: 0, y: 0, z: 0}
+    startBodyPartOffset: {x: 0, y: 0, z: 0}
+    endBodyPartOffset: {x: 0, y: 0, z: 0}
+    IKPoint: {x: 0, y: 0, z: 0}
+    lerpValue: 0
+  rightFoot:
+    current: 0
+    target: 0
+    weight: 0
+    currentPoint: {fileID: 0}
+    previousPoint: {fileID: 0}
+    currentIkVecPoint: {x: 0, y: 0, z: 0}
+    previousIkVecPoint: {x: 0, y: 0, z: 0}
+    currentVecPoint: {x: 0, y: 0, z: 0}
+    previousVecPoint: {x: 0, y: 0, z: 0}
+    currentVecPointOn: 0
+    previousVecPointOn: 0
+    boneTransform: {x: 0, y: 0, z: 0}
+    bodyPartOffset: {x: 0, y: 0, z: 0}
+    startBodyPartOffset: {x: 0, y: 0, z: 0}
+    endBodyPartOffset: {x: 0, y: 0, z: 0}
+    IKPoint: {x: 0, y: 0, z: 0}
+    lerpValue: 0
+  leftFoot:
+    current: 0
+    target: 0
+    weight: 0
+    currentPoint: {fileID: 0}
+    previousPoint: {fileID: 0}
+    currentIkVecPoint: {x: 0, y: 0, z: 0}
+    previousIkVecPoint: {x: 0, y: 0, z: 0}
+    currentVecPoint: {x: 0, y: 0, z: 0}
+    previousVecPoint: {x: 0, y: 0, z: 0}
+    currentVecPointOn: 0
+    previousVecPointOn: 0
+    boneTransform: {x: 0, y: 0, z: 0}
+    bodyPartOffset: {x: 0, y: 0, z: 0}
+    startBodyPartOffset: {x: 0, y: 0, z: 0}
+    endBodyPartOffset: {x: 0, y: 0, z: 0}
+    IKPoint: {x: 0, y: 0, z: 0}
+    lerpValue: 0
+  head:
+    current: 0
+    target: 0
+    weight: 0
+    currentPoint: {fileID: 0}
+    previousPoint: {fileID: 0}
+    currentIkVecPoint: {x: 0, y: 0, z: 0}
+    previousIkVecPoint: {x: 0, y: 0, z: 0}
+    currentVecPoint: {x: 0, y: 0, z: 0}
+    previousVecPoint: {x: 0, y: 0, z: 0}
+    currentVecPointOn: 0
+    previousVecPointOn: 0
+    boneTransform: {x: 0, y: 0, z: 0}
+    bodyPartOffset: {x: 0, y: 0, z: 0}
+    startBodyPartOffset: {x: 0, y: 0, z: 0}
+    endBodyPartOffset: {x: 0, y: 0, z: 0}
+    IKPoint: {x: 0, y: 0, z: 0}
+    lerpValue: 0
+  handSpacing: 0
+--- !u!114 &6477886320816527715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5164562003106331288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc6ff969c2c2a15439c259970a4e7a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

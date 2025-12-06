@@ -1,0 +1,47 @@
+Third-Party Notices
+
+This package includes third-party components licensed under various open licenses. These components are allowed for commercial use and redistribution under their respective terms.
+
+---
+
+### Fonts
+
+This package includes font files licensed under the SIL Open Font License, Version 1.1. These fonts are allowed for commercial use, redistribution, and embedding, provided they are not sold by themselves.
+
+Included Fonts:
+- Instrument Sans – https://fonts.google.com/specimen/Instrument+Sans
+- Jacques Francois – https://fonts.google.com/specimen/Jacques+Francois
+
+License:
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+
+> The full license text is included at the end of this file.  
+> For more information: https://scripts.sil.org/OFL
+
+---
+
+### Audio Files (Pixabay)
+
+This package includes sound effects obtained from Pixabay, a royalty-free audio platform. All Pixabay content is free to use for commercial and non-commercial purposes. Attribution is not required.
+
+Included Audio Files:
+- Bazuka Launch
+- Blast
+- Load Sniper Ammo
+- Pistol Shot
+- Rifle Reload
+- Rifle Shot
+- Rifle Trigger
+- Sniper Shot
+
+License:
+Pixabay License – Free for commercial use, no attribution required  
+More info: https://pixabay.com/service/license-summary/
+
+---
+
+### Full License Texts
+
+#### SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+
+(Include the full text of the SIL Open Font License, Version 1.1 here. You can obtain it at https://scripts.sil.org/OFL)
