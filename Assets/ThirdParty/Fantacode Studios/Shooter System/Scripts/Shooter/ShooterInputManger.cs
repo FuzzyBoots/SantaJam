@@ -58,12 +58,6 @@ namespace FS_ShooterSystem
         }
 #endif
 
-        public event Action<int> OnWeaponSelect;
-        public event Action<int> OnWeaponQuickDeploy;
-
-        private Dictionary<int, float> keyLastTapTime = new Dictionary<int, float>();
-        private Dictionary<int, int> keyTapCount = new Dictionary<int, int>();
-
         private void Update()
         {
             HandleAim();
@@ -74,28 +68,6 @@ namespace FS_ShooterSystem
 
             //Cancel Throw
             HandleThrowCancel();
-
-            HandleNumericSwitching();
-        }
-
-        void HandleNumericSwitching()
-        {
-            // Iterate through keys 1-9
-            for (int i = 1; i <= 9; i++)
-            {
-                KeyCode key = (KeyCode)((int)KeyCode.Alpha0 + i);
-                if (Input.GetKeyDown(key))
-                {
-                    if (CheckForMultiTap(i))
-                    {
-                        OnWeaponQuickDeploy?.Invoke(i - 1); // 0-based index
-                    }
-                    else
-                    {
-                        OnWeaponSelect?.Invoke(i - 1); // 0-based index
-                    }
-                }
-            }
         }
 
         
@@ -186,35 +158,9 @@ namespace FS_ShooterSystem
 
         private int requiredTapCount = 2;     // Number of taps required
         private float maxTimeBetweenTaps = 0.5f;  // Time allowed between taps
+
         private int currentTapCount = 0;
         private float lastTapTime = 0f;
-
-        // Modified to support multiple keys via ID
-        public bool CheckForMultiTap(int keyId)
-        {
-            if (!keyLastTapTime.ContainsKey(keyId))
-                keyLastTapTime[keyId] = 0f;
-            if (!keyTapCount.ContainsKey(keyId))
-                keyTapCount[keyId] = 0;
-
-            bool isMultiTapped = false;
-            float currentTime = Time.time;
-
-            if (currentTime - keyLastTapTime[keyId] <= maxTimeBetweenTaps)
-                keyTapCount[keyId]++;
-            else
-                keyTapCount[keyId] = 1;
-
-            keyLastTapTime[keyId] = currentTime;
-
-            if (keyTapCount[keyId] == requiredTapCount)
-            {
-                isMultiTapped = true;
-                keyTapCount[keyId] = 0; // Reset after success
-            }
-
-            return isMultiTapped;
-        }
 
         public bool CheckForMultiTap(bool inputPressed)
         {
